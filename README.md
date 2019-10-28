@@ -1,2 +1,2 @@
 # hello-world1
-App de orueba
+App de prueba
