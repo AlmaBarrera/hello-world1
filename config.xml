@@ -7,9 +7,9 @@
     <author email="support@phonegap.com" href="http://phonegap.com">
         PhoneGap Team
     </author>
-    <content src="index.html" />
-    <content src="hoja0.html" />
-    <content src="hoja1.html" />
+    <content src="index.html" /> <!--hoja de arranque-->
+<!--    <content src="hoja0.html" />
+    <content src="hoja1.html" />-->
     <content src="hoja2.html" />
     
     <preference name="DisallowOverscroll" value="true" />
@@ -118,5 +118,7 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <engine name="android" spec="https://github.com/apache/cordova-android.git#8.0.0" />
+    <!--version de cordova en du compudaora-->
+    <engine name="android" spec="https://github.com/apache/cordova-android.git#8.0.0" /> 
+    <engine name="android" spec="https://github.com/apache/cordova-android.git#9.0.0" />
 </widget>
