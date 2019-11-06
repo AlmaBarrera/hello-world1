@@ -9,8 +9,8 @@
     </author>
     <content src="index.html" /> <!--hoja de arranque-->
 <!--    <content src="hoja0.html" />
-    <content src="hoja1.html" />-->
-    <content src="hoja2.html" />
+    <content src="hoja1.html" />
+    <content src="hoja2.html" />-->
     
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
