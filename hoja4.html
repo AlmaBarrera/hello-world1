@@ -2,7 +2,12 @@
 <html>
   <head>
     <title>Capture Photo</title>
+		<!-- Bootstrap core CSS -->
 
+		<link href="css/bootstrap/bootstrap.css">
+		<link href="css/bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css" />
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <script type="text/javascript" charset="utf-8">
 
@@ -94,14 +99,25 @@
     </script>
   </head>
   <body>
-  		<h1>BOTONES SIN BOOTSTRAP CSS</h1>
-    <button onclick="capturePhoto();">Capture Photo</button> <br>
-    <button onclick="capturePhotoEdit();">Capture Editable Photo</button> <br>
-    <button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button><br>
-    <button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</button><br>
+  		<h1>BOTONES CON BOOTSTRAP CSS</h1>
+  		<div class="container">
+			  <div class="row">
+			    <div class="col" style="background-color:powderblue;">
+			      <button onclick="capturePhoto();">Capture Photo</button> <br>
+			    </div>
+			    <div class="col" style="background-color:pink;">
+			      <button onclick="capturePhotoEdit();">Capture Editable Photo</button> <br>
+			    </div>
+			  </div>
+			</div>
+    <br>
+    
+    <button type="button" class="btn btn-success" onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button><br>
+    <br>
+    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</button><br>
     <img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
     <img style="display:none;" id="largeImage" src="" />
-    <a href="hoja4.html">Botones con bootstrap</a><br>
-    <a href="index.html">Ir menú</a>
+    <a href="index.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Ir menú</a>
+   <!-- <a href="index.html">Ir menú</a>-->
   </body>
 </html>
